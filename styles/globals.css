@@ -14,3 +14,159 @@ a {
 * {
   box-sizing: border-box;
 }
+
+nav{
+  width: 100vw;
+  position: fixed;
+  
+  display: flex;
+  margin: auto;
+}
+main{
+  padding-top: 132px;
+  width: 100vw;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1024px;
+  background-color: white;
+  max-width: 1024px;
+}
+nav>div{
+  /* background-color: aliceblue; */
+  padding: 0 10px;
+  margin: auto;
+  width: 100%;
+  max-width: 1024px;
+  display: inherit;
+  justify-content: space-between;
+  
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: inherit;
+  list-style: none;
+  font-size: inherit;
+  line-height: inherit;
+}
+nav ul li{
+  padding: 0 5px;
+}
+nav ul li:hover{
+  background-color: aliceblue;
+}
+@media screen and (max-width: 600px){
+  /* nav ul{
+    display: none;
+  } */
+  nav>div{
+    justify-content: none;
+    font-size: 16px;
+  }
+}
+.main-nav{
+  top: 0%;
+  background-color: #00c5e0;
+  min-height: 72px;
+  font-size: 24px;
+  line-height: 72px;
+}
+section{
+  /* padding-top: 132px; */
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* width: 100vw;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1024px;
+  background-color: white;
+  max-width: 1024px; */
+}
+.sub-nav{
+  top: 72px;
+  background-color: #eeeeee;
+  padding: 0 10px;
+  margin: auto;
+  width: 100%;
+  max-width: 1024px;
+  display: inherit;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+.search-box{
+  width: 500px;
+}
+.search-box button{
+  line-height: 32px;
+  padding: 5px;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+  background-color:rgb(50, 50, 50);
+  color: gray;
+  width: 20%;
+}
+.search-field {
+  line-height: 32px;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  font-size: 20px;
+  width: 80%;
+}
+
+button:hover{
+  background-color: rgb(100, 100, 100);
+  color: #eeeeee;
+}
+button:active{
+  background-color: gray;
+}
+.menu-list{
+  padding-inline-start: 0;
+  
+  width: 500px;
+  height: 200px;
+  list-style: none;
+  overflow: auto;
+}
+.menu-list li{
+  background-color: #00c5e0;
+  line-height: 40px;
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.row{
+  display: flex;
+  background-color: #00c5e0;
+}
+@media (max-width: 768px) {
+  .row{
+    flex-direction: column;
+  } ;
+}
+.col{
+  flex: 1;
+  padding: 10px;
+}
+
+.text-success{
+  color: green;
+}
+.text-error{
+  color: red;
+  pointer-events: none;
+
+}
+.enabled-date {
+  color: green;
+}
+.disabled-date {
+  color: red;
+  pointer-events: none;
+}
