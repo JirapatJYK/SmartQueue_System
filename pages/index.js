@@ -112,13 +112,14 @@ export default class Home extends Component {
         </div> */}
 
         <section className='' id='office'>
+          <a href='#home' className='previous-section'>Pre</a>
           <h1>Choose Office</h1>
           <div className='search-box'>
             <input className='search-field' type="search" placeholder="search..." id="officeInput" onKeyUp={(e) => {this.filterFunction()}} ></input>
             <button type='submit'>search</button>
           </div>
           <ul className='menu-list' id="office-list">
-            <li><a onClick={ async(e) => {await this.setState({office: "Office_0"}); document.getElementById('officeInput').value=await this.state.office;}}>Office_0</a></li>
+            <li onClick={ async(e) => {await this.setState({office: "Office_0"}); document.getElementById('officeInput').value=await this.state.office;}}><a>Office_0</a></li>
             <li><a>Office_1</a></li>
             <li><a>Office_2</a></li>
             <li><a>Office_3</a></li>
@@ -126,8 +127,10 @@ export default class Home extends Component {
             <li><a>Office_5</a></li>
             <li><a>Office_6</a></li>
           </ul>
+          <a href='#job' className='next-section'>Next</a>
         </section>
         <section className="" id='job'>
+          <a href='#office' className='previous-section'>Pre</a>
           <h1>Choose Job</h1>
           <div className='search-box'>
             <input className='search-field' type="search" placeholder="search..." id="officeInput" onKeyUp={(e) => {this.filterFunction();}} ></input>
@@ -142,6 +145,7 @@ export default class Home extends Component {
             <li><a>Office_5</a></li>
             <li><a>Office_6</a></li>
           </ul>
+          <a href='#time' className='next-section'>Next</a>
         </section>
         <section className="" id='time'>
           <h1>Select Date And Time</h1>
