@@ -64,6 +64,9 @@ export default class Home extends Component {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar/>
+      {/* <div id="loader-bg">
+        <div id="loader"></div>
+      </div> */}
       <BookingNavbar/>
       <main className={styles.main}>
         <section id='home'>

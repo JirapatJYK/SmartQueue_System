@@ -24,7 +24,6 @@ nav{
   margin: auto;
 }
 main{
-  padding-top: 132px;
   width: 100vw;
   display: inherit;
   flex-direction: column;
@@ -101,7 +100,7 @@ section{
 }
 
 .search-box{
-  width: 500px;
+  max-width: 500px;
 }
 .search-box button{
   line-height: 32px;
