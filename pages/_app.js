@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import "react-datepicker/dist/react-datepicker.css";
+import "../styles/react-datepicker.css";/* 390 color */
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />

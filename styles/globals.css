@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;  
 }
 
 a {
@@ -128,8 +129,7 @@ button:active{
 }
 .menu-list{
   padding-inline-start: 0;
-  
-  width: 500px;
+  max-width: 500px;
   height: 200px;
   list-style: none;
   overflow: auto;

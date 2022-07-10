@@ -145,6 +145,7 @@ export default class Home extends Component {
           <div className='row'>
             <div className='col'>
               <DatePicker
+                inline
                 selected={this.state.startDate}
                 onChange={(date)=>this.onChangeDate(date)}
                 startDate={this.state.startDate}
@@ -155,10 +156,10 @@ export default class Home extends Component {
                 showMonthDropdown
                 showYearDropdown
                 dropdownMode="select"
-                showTimeSelect
-                timeFormat="HH:mm"
-                timeIntervals={60}
-                timeCaption="time"
+                // showTimeSelect
+                // timeFormat="HH:mm"
+                // timeIntervals={60}
+                // timeCaption="time"
                 dateFormat="d, MMM, yyyy h:mm:ss a"
                 minDate={new Date()}
                 excludeTimes={[
